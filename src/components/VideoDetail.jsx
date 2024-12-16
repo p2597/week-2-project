@@ -77,7 +77,8 @@ const AddToBtn = styled.button`
 export default function VideoDetail({ addToPlaylist }) {
     const { videoId } = useParams();
     const [searchParams] = useSearchParams();
-    console.log({ addToPlaylist })
+  
+    
   
     const { data, error } = useSWR(
       videoId ? `https://harbour.dev.is/api/videos/${videoId}` : null,

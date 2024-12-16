@@ -74,7 +74,7 @@ export default function VideosSearch({ searchValue }) {
         return <p>Error loading video details. Please try again later.</p>;
     }
 
-    const videos = data?.results || data || []; // Adjust depending on API response structure
+    const videos = data?.results || data || []; 
 
     return (
         <FeaturedVideosContainer
