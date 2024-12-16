@@ -1,7 +1,5 @@
 import VideoContainer from "./VideoContainer";
 
-import "/Users/p1997/React_hsu/week-2-project/src/index.css"
-
 export default function Main({videos, error}) {
 
     if (error) {

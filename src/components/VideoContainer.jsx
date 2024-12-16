@@ -16,6 +16,13 @@ const VideoContainerWrapper = styled(motion.div)`
   }
 `;
 
+const SectionVideo = styled.div`
+  display: grid;
+  grid-direction: row;
+  padding: 5%;
+    grid-template-columns: repeat(3, 1fr);
+  gap: 20px;`;
+
 const VideoWrapper = styled.div`
   border-radius: 10px;
   overflow: hidden;
@@ -29,6 +36,7 @@ const ContentWrapper = styled.div`
 
 export default function VideoContainer({ video }) {
   return (
+    <SectionVideo> 
     <VideoContainerWrapper
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -50,5 +58,6 @@ export default function VideoContainer({ video }) {
         <strong>{video.snippet.duration || 'Additional Info'}</strong>
       </ContentWrapper>
     </VideoContainerWrapper>
+    </SectionVideo>
   );
 }

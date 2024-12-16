@@ -94,7 +94,7 @@ export default function VideosSearch({ searchValue }) {
                         {/* Image Wrapper */}
                         <ImageWrapper className="f-img-wrapper">
                             <Image
-                                src={video.snippet.thumbnails.url} // Replace with the correct thumbnail field
+                                src={video.snippet.thumbnails.url} 
                                 alt={video.title || 'Featured Video'}
                             />
                         </ImageWrapper>
